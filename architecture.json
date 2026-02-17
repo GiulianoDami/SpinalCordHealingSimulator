@@ -1,0 +1,37 @@
+{
+    "language": "TypeScript",
+    "dependency_file": "package.json",
+    "dependencies": ["@types/node"],
+    "files": [
+        {
+            "path": "src/SpinalCordSimulator.ts",
+            "description": "Main simulation class that orchestrates the spinal cord healing process",
+            "exports": ["class SpinalCordSimulator"]
+        },
+        {
+            "path": "src/models/CellularModel.ts",
+            "description": "Models cellular behaviors including inflammation, scar tissue, and nerve growth",
+            "exports": ["class CellularModel", "interface CellState"]
+        },
+        {
+            "path": "src/treatments/TherapyFramework.ts",
+            "description": "Framework for applying and managing therapeutic interventions",
+            "exports": ["class TherapyFramework", "interface TreatmentParams"]
+        },
+        {
+            "path": "src/utils/SimulationUtils.ts",
+            "description": "Utility functions for simulation calculations and data handling",
+            "exports": ["function calculateInflammationDecay(number)", "function simulateNerveRegrowth(object)"]
+        },
+        {
+            "path": "src/visualization/Visualizer.ts",
+            "description": "Handles visualization of healing progress and results",
+            "exports": ["class Visualizer", "function renderHealingGraph(object)"]
+        },
+        {
+            "path": "src/types/index.ts",
+            "description": "Shared interfaces and type definitions across the application",
+            "exports": ["interface SimulationConfig", "interface SimulationResults"]
+        }
+    ]
+}
